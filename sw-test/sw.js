@@ -19,8 +19,8 @@
         return caches.open(version + staticCacheName)
             .then(function (cache) {
                 return cache.addAll([
-        // '/jj_final/sw-test/',
-        '/jj_final/sw-test/index.html'
+        // '/hiddenletters/sw-test/',
+        '/hiddenletters/sw-test/index.html'
                 ]);
             });
     };
