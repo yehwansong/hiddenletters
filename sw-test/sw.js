@@ -12,14 +12,14 @@
     // A cache for images to store for offline
     var imagesCacheName = 'images';
     // Update 'version' if you need to refresh the caches
-    var version = 'v1::';
+    var version = 'v1';
 
     // Store core files in a cache (including a page to display when offline)
     var updateStaticCache = function() {
         return caches.open(version + staticCacheName)
             .then(function (cache) {
                 return cache.addAll([
-        '/jj_final/sw-test/',
+        // '/jj_final/sw-test/',
         '/jj_final/sw-test/index.html'
                 ]);
             });
